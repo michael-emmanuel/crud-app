@@ -1,0 +1,29 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/631f8941a0bb978764f17766
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+  "name": "Michael Emmanuel",
+  "subscribedToChannel": "Mike's Channel"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/631f87310ac6f28def67cf79
+
+###
+
+PATCH http://localhost:3000/subscribers/631f8941a0bb978764f17766
+Content-Type: application/json
+
+{
+  "name": "New Name"
+}
+
